@@ -54,6 +54,11 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "allowedHosts": [
+              "salvaging-irritable-scrambled.ngrok-free.dev"
+            ]
+          },
           "configurations": {
             "production": {
               "buildTarget": "becoming_french:build:production"

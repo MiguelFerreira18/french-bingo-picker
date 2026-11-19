@@ -1,0 +1,35 @@
+<button
+  (click)="isChecked.set(!isChecked())"
+  class="relative flex size-full items-center justify-center border border-solid p-1 text-center text-xl font-bold text-white [container-type:inline-size]"
+>
+  <p class="w-full text-[13cqw] leading-tight break-words hyphens-auto">{{ value() }}</p>
+
+  @if (isChecked()) {
+    <svg
+      class="pointer-events-none absolute inset-0 h-full w-full text-red-500/70"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <line
+        x1="8"
+        y1="8"
+        x2="92"
+        y2="92"
+        stroke="currentColor"
+        stroke-width="4"
+        stroke-linecap="round"
+        vector-effect="non-scaling-stroke"
+      />
+      <line
+        x1="92"
+        y1="8"
+        x2="8"
+        y2="92"
+        stroke="currentColor"
+        stroke-width="4"
+        stroke-linecap="round"
+        vector-effect="non-scaling-stroke"
+      />
+    </svg>
+  }
+</button>
